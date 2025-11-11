@@ -98,6 +98,9 @@ saveRDS(dir_net,"dir_net.RDS")
 
 ```
 
+Note that while we have focused on adjacency matrices and edgelists here, networks can also be saved in a number of other formats, especially in other software. The `read_graph()`function in igraph ([here](https://r.igraph.org/reference/read_graph.html)) is helpful to read these network files into R. A common example is the *.graphml* file type. This can be read into R with code such as:
+`read_graph(file="<network_name>.graphml",format="graphml")`
+
 We now have some networks we can use in demonstrating many of the descriptive measures used in social network analysis.
 
 ***
